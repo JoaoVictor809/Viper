@@ -1,0 +1,512 @@
+/* fonte */
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: "Hind", sans-serif;
+}
+
+.frete {
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+#logo_viper {
+    width: 17%;
+}
+
+.nave001 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 2%;
+    align-items: center;
+
+}
+
+.search {
+    width: 40%;
+    height: 55px;
+    border: solid 2px black;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.search button {
+    background-color: transparent;
+    border: none;
+    padding-left: 20px;
+}
+
+.search input {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    width: 100%;
+}
+
+.search input:focus {
+    outline: none;
+}
+
+
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 20px;
+    padding-top: 20px;
+
+}
+
+.menu li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.menu li a {
+    color: black;
+    font-family: "Hind", sans-serif;
+    text-decoration: none;
+}
+
+.seta {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    top: 60px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.show {
+    display: block;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    padding-bottom: 90px;
+}
+
+.secao {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+/* animação para aumentar a imagem em camera lenta */
+.secao img {
+    width: 350px;
+    transition: transform 1s ease-in-out;
+}
+
+.secao img:hover {
+    transform: scale(1.2);
+}
+
+.container_menu001 {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.container_menu001 img {
+    cursor: pointer;
+}
+
+.sacao003 img {
+    height: 605px;
+    transition: transform 1s ease-in-out;
+
+}
+
+.sacao003 img:hover {
+    transform: scale(1.2);
+}
+
+.secao001 {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.secao002 {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.produtos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 50px;
+    flex-direction: row;
+    width: 100%;
+    padding-left: 100px;
+    padding-right: 100px;
+
+}
+
+.produtos div {
+    cursor: pointer;
+}
+
+
+
+
+
+/* testando o Image Overlay Slide */
+/* .container_nike01{
+    width: 352px;
+    height: 441.11px;
+    display: block;
+    overflow:hidden;
+} */
+
+.container_nike01{
+width: 100%;
+}
+
+.imageInfo{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.infoNike{
+position: absolute;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+
+}
+
+.container_nike01:hover .infoNike{
+    height: 100%;
+}
+
+/* .seta {
+    height: 30px;
+} */
+
+
+.marcas {
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.marcas img {
+    width: 350px;
+}
+
+.container_menu002 {
+    /* display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding-bottom: 50px;
+    cursor: pointer; */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+/* menu */
+.containerMain {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 20px;
+}
+
+.container01 {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.container02 {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    height: 100%;
+}
+
+.adidas {
+    border: 2px solid #000;
+    width: 300px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nike {
+    border: 2px solid #000;
+    width: 300px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.adidas2 {
+    border: 2px solid #000;
+    width: 300px;
+    height: 510px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    /* border: 1px solid #000; */
+    color: #000;
+
+}
+
+.container {
+    position: relative;
+    display: grid;
+    place-items: center;
+
+    & h3 {
+        font: 550 5.5rem 'arial-black', impact, sans-serif;
+        cursor: pointer;
+        font-size: 70px;
+    }
+
+    & :where(h3, .image) {
+        grid-column: 1;
+        grid-row: 1;
+    }
+}
+
+.stroke {
+    z-index: 10;
+    -webkit-text-stroke-width: 0.2rem;
+    -webkit-text-stroke-color: black;
+    -webkit-text-fill-color: transparent;
+
+    &:hover+.image {
+        opacity: 1;
+        transform: translateX(0) rotate(-25deg);
+        transition: transform 1s, opacity 0.5s;
+    }
+}
+
+.image {
+    width: 230px;
+    opacity: 0;
+    transform: translateX(150%);
+    transition: transform 1s, opacity 0.5s 0.25s;
+    /* display: none; */
+}
+
+
+
+.secao004{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+ 
+.secao005{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+ 
+.sacao006 img{
+    height:614px;
+    transition: transform 0.5s ease-in-out;
+}
+.sacao006 img:hover{
+    transform: scale(1.1);
+}
+ 
+.insta {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 50px;
+}
+
+.boato button {
+    border: solid 3px #5CC0BA;
+    background-color: transparent;
+    width: 320px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #5CC0BA;
+    transition: transform 1s ease-in-out;
+    cursor: pointer;
+}
+
+.boato button:hover {
+    transform: scale(1.2);
+}
+
+.boato {
+    display: flex;
+    justify-content: center;
+}
+
+.cadastro {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #44444449;
+    width: 100%;
+    height: 60vh;
+    padding: 60px;
+    align-items: center;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.text p {
+    padding-top: 10px;
+    border-top: solid 1px black;
+}
+
+.caixa {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    height: 50px;
+}
+
+.caixa input {
+    font-size: 20px;
+}
+
+.caixa input:focus {
+    outline: none;
+}
+
+#text {
+    width: 370px;
+}
+
+#botao {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    background-color: black;
+    border: none;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: left;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+footer div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.boato002 button {
+    border: solid 3px #5CC0BA;
+    background-color: transparent;
+    width: 320px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #5CC0BA;
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+.boato002 button:hover {
+    width: 250px;
+    background-color: #5CC0BA;
+    color: white;
+}
+
+.boato002 {
+    display: flex;
+    justify-content: center;
+}
