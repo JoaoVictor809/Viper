@@ -11,9 +11,13 @@
     <link rel="stylesheet" href="css/style2.css">
     <link rel='stylesheet' href='//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css'>
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,100,400italic,700italic,700'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
 </head>
 
 <body>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="app.js"></script>
     <header>
         <div class="frete">
             <p><strong>Frete</strong> Grátis nas compras acima de R$189,90 para as regiões Sul & Sudeste, e acima de
@@ -171,40 +175,45 @@
 
         <div class="news">
             <h1>NOVIDADES</h1>
-            <div class="produtos">
-                <!-- <img class="seta" src="assets/seta_esquerda.png" alt=""> -->
-                <div class="container_nike01">
-                    <img src="assets/image 4.png" alt="" class="imageInfo">
-                    <div class="infoNike">
+            <!-- Slider main container -->
+            <div class="swiper">
 
-                        <p>Tênis Nike SB Air Max Ishod 2 <br> "White Aquarius Blue"</p>
-                    <p>R$899,99</p>
-                    <p>12x de R$75,00</p>
-                    <button>Compre!!</button>
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <img src="assets/nike01.svg" alt="">
+                        <div class="title">
+                            <span>Nike</span>
+                        </div>
                     </div>
+                    <div class="swiper-slide">
+                        <img src="assets/nike02.svg" alt="">
+                        <div class="title">
+                            <span>Nike</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/nike03.svg" alt="">
+                        <div class="title">
+                            <span>Nike</span>
+                        </div>
+                    </div>
+                     <div class="swiper-slide">
+                        <img src="assets/nike04.svg" alt="">
+                        <div class="title">
+                            <span>Nike</span>
+                        </div>
+                    </div>
+                     <div class="swiper-slide">
+                        <img src="assets/nike05.svg" alt="">
+                        <div class="title">
+                            <span>Nike</span>
+                        </div>
+                    </div>
+
                 </div>
 
-                <div class="container_nike02">
-                    <img src="assets/image 9.png" alt="">
-                    <p>Tênis Nike SB Air Max Ishod 2 <br> "Varsity Red"</p>
-                    <p>R$719,99</p>
-                    <p>12x de R$60,00</p>
-                </div>
-
-                <div class="container_nike03">
-                    <img src="assets/image 10.png" alt="">
-                    <p>Tênis Ous 2K x Caloi Cross <br> Extra</p>
-                    <p>R$549,99</p>
-                    <p>12x de R$45,83</p>
-                </div>
-
-                <div class="container_nike03">
-                    <img src="assets/image 10.png" alt="">
-                    <p>Tênis Ous 2K x Caloi Cross <br> Extra</p>
-                    <p>R$549,99</p>
-                    <p>12x de R$45,83</p>
-                </div>
-                <!-- <img class="seta" src="assets/seta_direita.png" alt=""> -->
+                <div class="swiper-pagination"></div>
             </div>
         </div>
 
